@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --clr-primary: hsl(172, 67%, 45%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(189, 41%, 97%);
+    --clr-neutral-300: hsl(185, 41%, 84%);
+    --clr-neutral-400: hsl(184, 14%, 56%);
+    --clr-neutral-500: hsl(186, 14%, 43%);
+    --clr-neutral-600: hsl(183, 100%, 15%);
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background: var(--clr-neutral-300);
+}
+
+.title {
+    color: var(--clr-neutral-500);
+}
+
+form {
+    background: var(--clr-neutral-100);
+}
+
+.accent-title {
+    color: var(--clr-neutral-500);
+}
+
+.accent-title-light {
+    color: var(--clr-neutral-400);
+}
+
+.tip-amount {
+    background: var(--clr-neutral-600);
+}
+
+.neutral-title {
+    color: var(--clr-neutral-100);
+}
+
+.btn-main {
+    font-family: 'Space Mono', monospace;
+    background-color: var(--clr-neutral-600);
+    color: var(--clr-neutral-100);
+    border: none;  
+    border-radius: 0.6rem; 
+    padding: 0.8em; 
+} 
+
+.btn-main:hover,
+.btn-main:focus {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-600);
+}
+
+.btn-inverse {
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-600);
+    border: none;  
+    border-radius: 0.45rem; 
+    padding: 0.8em; 
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
