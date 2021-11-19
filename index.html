@@ -12,35 +12,42 @@
 <body>
     <h1 class="title">SPLI<br>TTER</h1>
     <form class="calculator">
-        <h2><label for="bill-amount" class="accent-title">Bill</label></h2>
-        <input type="text" name="bill-amount" id="bill-amount">
+        <div class="bill">
+            <h2 class="bill__heading"><label for="bill__amount" class="accent-title">Bill</label></h2>
+            <input type="text" name="bill__amount" id="bill__amount" class="bill__amount">
+        </div>
 
         <div class="tip">
-            <h2><label for="" class="accent-title">Select Tip %</label></h2>
-            <button class="btn-main">5%</button>
-            <button class="btn-main">10%</button>
-            <button class="btn-main">15%</button>
-            <button class="btn-main">25%</button>
-            <button class="btn-main">50%</button>
-            <button class="btn-custom">Custom</button>
+            <h2 class="tip__heading"><label for="" class="accent-title">Select Tip %</label></h2>
+            <div class="tip__btns">
+                <button class="btn-main">5%</button>
+                <button class="btn-main">10%</button>
+                <button class="btn-main">15%</button>
+                <button class="btn-main">25%</button>
+                <button class="btn-main">50%</button>
+                <input type="text" name="tip__custom" class="tip__custom" id="tip__custom" placeholder="Custom">
+            </div>
         </div>
         
-        <h2><label for="people-no" class="accent-title">Number of People</label></h2>
-        <input type="text" name="people-no" id="people-no">
+        <div class="no-of-people">
+            <h2 class="no-of-people__heading"><label for="people-no" class="accent-title">Number of People</label></h2>
+            <input type="text" name="people-no" id="people-no" class="people-no">
+        </div>
 
         <div class="tip-amount">
             <h2 class="neutral-title">Tip Amount</h2>
             <h3 class="accent-title-light">/ person</h3>
             <h2 class="neutral-title">Total</h2>
             <h3 class="accent-title-light">/ person</h3>
-            <button class="btn-inverse">Reset</button>
+            <button class="btn-inverse reset">Reset</button>
         </div>
         
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Your Name Here</a>.
+        </div>
     </form>
   
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
+    
 </body>
 </html>
