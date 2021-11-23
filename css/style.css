@@ -78,6 +78,10 @@ form {
     background: var(--clr-neutral-600);
     border-radius: 1rem;
     padding: 1.6rem;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .neutral-title {
@@ -158,11 +162,24 @@ div + div {
     margin-bottom: .6rem;
 }
 
+.tip-amount-display, .total-amount-display {
+    /* text-align: right; */
+    color:var(--clr-primary);
+    font-size: 24px; 
+}
 
+.total-amount-display {
+    margin-top: 1.25rem;
+}
 
+.tip-amount-display {
+    align-self: start;
+    margin-top: .4rem;
+}
 
-
-
+.col + .col {
+    margin-top: 0;
+}
 
 
 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="css/style.css">  
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    
+    <script src="js/tip.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <title>Frontend Mentor | Tip calculator app</title>
 
 </head>
@@ -35,10 +36,18 @@
         </div>
 
         <div class="tip-amount">
-            <h2 class="neutral-title">Tip Amount</h2>
-            <h3 class="accent-title-light">/ person</h3>
-            <h2 class="neutral-title">Total</h2>
-            <h3 class="accent-title-light">/ person</h3>
+            
+            <div class="col">
+                <h2 class="neutral-title">Tip Amount</h2>
+                <h3 class="accent-title-light ">/ person</h3>
+                <h2 class="neutral-title">Total</h2>
+                <h3 class="accent-title-light">/ person</h3>
+            </div>
+            <div class="col">
+                <h2 class="tip-amount-display"></h2>
+        
+                <h2 class="total-amount-display"></h2>
+            </div>
             <button class="btn-inverse reset">Reset</button>
         </div>
         
