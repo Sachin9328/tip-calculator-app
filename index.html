@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="css/style.css">  
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <script src="js/tip.js"></script>
+    
 
     <title>Frontend Mentor | Tip calculator app</title>
 
@@ -14,58 +14,55 @@
     <h1 class="title">SPLI<br>TTER</h1>
     <form class="calculator">
         
-        <div class="bill">
-           
-            <h2 class="bill__heading"><label for="bill__amount" class="accent-title">Bill</label></h2>
-            <input type="text" name="bill__amount" id="bill__amount" class="bill__amount">
-        
-        </div>
-
-        <div class="tip">
+        <div class="main-cols">
+            <div class="bill">
             
-            <h2 class="tip__heading"><label for="" class="accent-title">Select Tip %</label></h2>
-            <div class="tip__btns">
-                <button type="button" class="btn btn-main">5%</button>
-                <button type="button" class="btn btn-main">10%</button>
-                <button type="button" class="btn btn-main">15%</button>
-                <button type="button" class="btn btn-main">25%</button>
-                <button type="button" class="btn btn-main">50%</button>
-                <input type="text" name="tip__custom" class="tip__custom" id="tip__custom" placeholder="Custom">
-            </div>
-
-        </div>
-        
-        <div class="no-of-people">
-
-            <h2 class="no-of-people__heading"><label for="people-no" class="accent-title">Number of People</label></h2>
-            <input type="text" name="people-no" id="people-no" class="people-no">
-
-        </div>
-
-        <div class="tip-amount">
+                <h2 class="bill__heading"><label for="bill__amount" class="accent-title">Bill</label></h2>
+                <input type="text" name="bill__amount" id="bill__amount" class="bill__amount" placeholder="0">
             
-            <div class="col">
-                <h2 class="neutral-title">Tip Amount</h2>
-                <h3 class="accent-title-light ">/ person</h3>
-                <h2 class="neutral-title">Total</h2>
-                <h3 class="accent-title-light">/ person</h3>
             </div>
-
-            <div class="col">
-                <h2 class="tip-amount-display"></h2>
-                <h2 class="total-amount-display"></h2>
+            <div class="tip">
+            
+                <h2 class="tip__heading"><label for="" class="accent-title">Select Tip %</label></h2>
+                <div class="tip__btns">
+                    <button type="button" class="btn btn-main" value="5">5%</button>
+                    <button type="button" class="btn btn-main" value="10">10%</button>
+                    <button type="button" class="btn btn-main" value="15">15%</button>
+                    <button type="button" class="btn btn-main" value="25">25%</button>
+                    <button type="button" class="btn btn-main" value="50">50%</button>
+                    <input type="text" name="tip__custom" class="tip__custom" id="tip__custom" placeholder="Custom">
+                </div>
             </div>
+            
+            <div class="no-of-people">
+                <h2 class="no-of-people__heading"><label for="people-no" class="accent-title">Number of People</label></h2>
+                <input type="text" name="people-no" id="people-no" class="people-no" placeholder="0">
+            </div>
+        </div>
 
-            <button class="btn-inverse reset">Reset</button>
-
+        <div class="main-cols">
+            <div class="tip-amount">
+            
+                <div class="col">
+                    <h2 class="neutral-title">Tip Amount</h2>
+                    <h3 class="accent-title-light ">/ person</h3>
+                    <h2 class="neutral-title">Total</h2>
+                    <h3 class="accent-title-light">/ person</h3>
+                </div>
+                <div class="col">
+                    <h2 class="tip-amount-display">$0.00</h2>
+                    <h2 class="total-amount-display">$0.00</h2>
+                </div>
+                <button class="btn-inverse reset">Reset</button>
+            </div>
         </div>
         
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Sachin Jadhav</a>.
+            Coded by <a href="https://codepen.io/sachin9328">Sachin Jadhav</a>.
         </div>
     </form>
   
-    
+    <script src="js/tip.js"></script>
 </body>
 </html>

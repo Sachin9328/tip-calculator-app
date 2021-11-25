@@ -163,9 +163,13 @@ div + div {
 }
 
 .tip-amount-display, .total-amount-display {
-    /* text-align: right; */
+    text-align: right;
     color:var(--clr-primary);
     font-size: 24px; 
+}
+
+.tip__custom {
+    color:var(--clr-neutral-600);
 }
 
 .total-amount-display {
@@ -181,7 +185,29 @@ div + div {
     margin-top: 0;
 }
 
+@media (min-width: 768px) {
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: stretch;
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 1.8rem 1.8rem 1.8rem 1.8rem;
+    }
 
+    form > * {
+        flex: 1 1 50%;
+    }
+
+    .attribution {
+        align-self: flex-end;
+    }
+    
+    div + div {
+        margin-top: 0;
+    }
+}
 
 
 
