@@ -37,16 +37,29 @@ button {
     font-weight: 700;
 } 
 
+button:hover {
+    background-color: var(--clr-neutral-300);
+    color: var(--clr-neutral-600);
+}
+
+button:focus {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-600);
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border: 2px solid var(--clr-primary);
+}
+
 .btn-main { 
     background-color: var(--clr-neutral-600);
     color: var(--clr-neutral-100);
 } 
-
-.btn-main:hover,
-.btn-main:focus {
-    background-color: var(--clr-primary);
-    color: var(--clr-neutral-600);
-}
 
 .btn-inverse {
     background-color: var(--clr-primary);
@@ -79,7 +92,6 @@ form {
     border-radius: 1rem;
     padding: 1.6rem;
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -198,10 +210,15 @@ div + div {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width: 50%;
+        width: 55%;
         margin: 0 auto;
         border-radius: 1.8rem 1.8rem 1.8rem 1.8rem;
         gap: 6% ;
+    }
+
+    .tip__custom {
+        padding-right: 0;
+        text-align: center;
     }
 
     .main-cols {
