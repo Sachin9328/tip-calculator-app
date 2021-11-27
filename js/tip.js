@@ -12,12 +12,14 @@ function tipCalculate(e) {
         let tipAmountPerPerson = billAmount / 100 * customTipPercent / noOfPeople;
         let totalAmountPerPerson = (billAmount + (billAmount / 100 * customTipPercent)) / noOfPeople;
         document.getElementsByClassName('tip-amount-display')[0].innerHTML = '$'+parseFloat(tipAmountPerPerson).toFixed(2);
-        document.getElementsByClassName('total-amount-display')[0].innerHTML = '$'+parseFloat(totalAmountPerPerson).toFixed(2);  
+        document.getElementsByClassName('total-amount-display')[0].innerHTML = '$'+parseFloat(totalAmountPerPerson).toFixed(2);
+        document.getElementsByClassName('reset')[0].style.opacity = '1';
     } else { 
         let tipAmountPerPerson = billAmount / 100 * tipPercent / noOfPeople;       
         let totalAmountPerPerson = (billAmount + (billAmount / 100 * tipPercent)) / noOfPeople;
         document.getElementsByClassName('tip-amount-display')[0].innerHTML = '$'+parseFloat(tipAmountPerPerson).toFixed(2);
-        document.getElementsByClassName('total-amount-display')[0].innerHTML = '$'+parseFloat(totalAmountPerPerson).toFixed(2);  
+        document.getElementsByClassName('total-amount-display')[0].innerHTML = '$'+parseFloat(totalAmountPerPerson).toFixed(2);
+        document.getElementsByClassName('reset')[0].style.opacity = '1';
     } 
    
 }
@@ -37,6 +39,7 @@ inp1.onkeyup = function (e) {
     if (inp1.value == 0) {
         e.target.style.outline = "none";
         e.target.style.border = "2px solid #b57f75";
+        document.getElementById("no-of-people__error").innerHTML = "Can't be zero";
     } else if (inp1.value != 0) {
         e.target.style.outline = "none";
         e.target.style.border = "2px solid #26c0ab";
@@ -47,6 +50,7 @@ inp2.onkeyup = function (e) {
     if (inp2.value == 0) {
         e.target.style.outline = "none";
         e.target.style.border = "2px solid #b57f75";
+        document.getElementById("bill__amount__error").innerHTML = "Can't be zero";
     } else if (inp2.value != 0) {
         e.target.style.outline = "none";
         e.target.style.border = "2px solid #26c0ab";

@@ -15,12 +15,14 @@
     <form class="calculator">
         
         <div class="main-cols">
+
             <div class="bill">
             
-                <h2 class="bill__heading"><label for="bill__amount" class="accent-title">Bill</label></h2>
+                <h2 class="bill__heading"><label for="bill__amount" class="accent-title">Bill</label><span id="bill__amount__error"></span></h2>
                 <input type="text" name="bill__amount" id="bill__amount" class="bill__amount" placeholder="0">
             
             </div>
+
             <div class="tip">
             
                 <h2 class="tip__heading"><label for="" class="accent-title">Select Tip %</label></h2>
@@ -35,9 +37,10 @@
             </div>
             
             <div class="no-of-people">
-                <h2 class="no-of-people__heading"><label for="people-no" class="accent-title">Number of People</label></h2>
+                <h2 class="no-of-people__heading"><label for="people-no" class="accent-title">Number of People</label><span id="no-of-people__error"></span></h2>
                 <input type="text" name="people-no" id="people-no" class="people-no" placeholder="0">
-            </div>
+            </div> 
+            
         </div>
 
         <div class="main-cols tip-amount-div">
